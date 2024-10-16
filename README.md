@@ -32,7 +32,7 @@ To set up the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/nour-gamal/Planradar-React-Assessment.git
-   cd PLANRADAR-TICKETING-SYSTEM
+   cd Planradar-React-Assessment
    ```
 
 2. **Install dependencies**:
