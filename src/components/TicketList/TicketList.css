@@ -1,0 +1,55 @@
+/* styles.css */
+.ticket-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.search-container {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.search-container input {
+	padding: 10px 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	width: 50%;
+	margin: auto;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input:focus {
+	border-color: #3f51b5;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2); /* MUI focus shadow */
+}
+
+.search-container input::placeholder {
+	color: #999;
+}
+.ticket-table th,
+.ticket-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.ticket-table th {
+	background-color: #4caf50;
+	color: white;
+}
+
+.ticket-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.ticket-table tr:hover {
+	background-color: #ddd;
+}
+.ticket-table-container .no-data-found {
+	text-align: center;
+}

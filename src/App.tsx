@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TicketList from "./components/TicketList/TicketList";
+import { generateTickets } from "./helpers/generateTickets";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const tickets = generateTickets(10000); // Generate 10,000 tickets
+	return (
+		<div className="App">
+			<h1 className="main-header">PlanRadar Ticket List</h1>
+			<TicketList tickets={tickets} />
+		</div>
+	);
 }
 
 export default App;
