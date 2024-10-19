@@ -67,8 +67,8 @@ function TicketList({ tickets }: { tickets: Ticket[] }) {
 					<thead>
 						<tr>
 							<th>Subject</th>
-							<th>Priority</th>
 							<th>Status</th>
+							<th>Priority</th>
 							<th>Desciption</th>
 						</tr>
 					</thead>
